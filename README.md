@@ -1,2 +1,2 @@
-# interpp
-C++/STL version of my interpreter
+# interp_plus
+New version of my command shell written in C++.
