@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include "main.h"
 
 // Create properties object
 // Deserialize properties and load them into the main object
