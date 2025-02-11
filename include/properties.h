@@ -1,5 +1,8 @@
+#pragma once
+
+
 template <typename T>
-class Base {
+class Properties_T {
 public:
 	virtual void get(T data) {
 		std::cout << "Base class: " << data << std::endl;
@@ -11,10 +14,18 @@ public:
 };
 
 template <typename T>
-class Derived : public Base<T> {
+class Properties : public Properties_T<T> {
 public:
-    void get(T data) override {
-        std::cout << "Derived class: " << data << std::endl;
-    }
+	Properties (const Properties&) = delete;
+	Properties& operator=(const Properties&) = delete;
+	
+	void get(T data) override {
+		std::cout << "Derived class: " << data << std::endl;
+	}
+
+	void set(T data) {
+    	
+	}
+
 };
 
