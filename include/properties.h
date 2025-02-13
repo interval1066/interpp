@@ -10,6 +10,7 @@ public:
 	virtual void set(T data) {
     	
 	}
+	
 	virtual ~Base() = default;
 };
 
@@ -26,6 +27,5 @@ public:
 	void set(T data) {
     	
 	}
-
 };
 
