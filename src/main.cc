@@ -109,7 +109,9 @@ main(int argc, char** argv)
 		getline(std::cin, cmd_string);
 
 		// ???? Just copying and pasting for now, this will undergo many changes...
-		size = (size_t)strlen(cmd_string);
+		size = cmd_string.length();
+		// this needs special care, I know there's an object oriented way to do this,
+		// suspect this will be completly different soon
 		char** splitresult = split(cmd_string, ' ', &size);
 		bDo = proc_cmds(splitresult, size);
 
