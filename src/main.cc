@@ -106,11 +106,8 @@ main(int argc, char** argv)
 		std::string cmd_string;
 		cout << "%s " << user.prompt);
 
-#ifdef _MSV_VER
-		cmd_string = get_cmdln();
-#else
-		getline(&cmd_string, &len, stdin);
-#endif
+		getline(std::cin, cmd_string);
+
 		// ???? Just copying and pasting for now, this will undergo many changes...
 		size = (size_t)strlen(cmd_string);
 		char** splitresult = split(cmd_string, ' ', &size);

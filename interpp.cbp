@@ -32,7 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="include/cxxopts.h" />
+		<Unit filename="include/main.h" />
+		<Unit filename="include/objectbase.h" />
+		<Unit filename="include/properties.h" />
+		<Unit filename="include/ptrmgr.h" />
+		<Unit filename="include/threadpoolmanager.h" />
+		<Unit filename="src/main.cc" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
